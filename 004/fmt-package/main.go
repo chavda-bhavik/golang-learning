@@ -5,6 +5,7 @@ import "fmt"
 var x int = 10
 
 func main() {
+	fmt.Print(x)
 	fmt.Println(x)
 	// formating output
 	fmt.Printf("Original value %v\n", x)
@@ -16,4 +17,7 @@ func main() {
 	fmt.Printf("Base 16, with upper-case letters %X\n", x)
 	fmt.Printf("Unicode format %U\n", x)
 	fmt.Printf("%v\t%T\t%d\n", x, x, x)
+
+	s := fmt.Sprintf("%v\t%T\t%d\n", x, x, x)
+	fmt.Println(s)
 }
