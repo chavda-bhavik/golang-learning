@@ -4,16 +4,20 @@ import (
 	"fmt"
 )
 
-var y = 42
-var a int
+var a string
 
 type bhavik string
 
 var z bhavik
 
 func main() {
-	a = 42
+	a = "Temp text"
 	z = "Hello Bhavik"
 	fmt.Println(z)
 	fmt.Printf("%T\n", z)
+
+	// conversions
+	a = string(z)
+	fmt.Println(a)
+	fmt.Printf("%T\n", a)
 }
